@@ -179,6 +179,7 @@ public class Game extends Application {
             GROUP.getChildren().add(imageView);
             AtomicInteger count = new AtomicInteger();
             count.set(0);
+
             // process the click, when clicking on a chess piece
             imageView.setOnMousePressed(e -> {
                 // case when chess piece will beat another chess piece
@@ -191,6 +192,7 @@ public class Game extends Application {
                         GROUP.getChildren().remove(imageView);
                         // sets that the beaten chess piece is dead
                         chessPiece.setDead(true);
+
                         // moves the picture of the chess piece killer to new position
                         chessKiller.setPosition(ChessPiece.positionToString((int) ((e.getSceneX() - (e.getSceneX()) % 50) / 50),
                                 7 - (int) ((e.getSceneY() - (e.getSceneY()) % 50) / 50)));
