@@ -103,6 +103,7 @@ public class Game extends Application {
     // the image of the chess piece (chessKiller) that can eat another color chess piece
     private ImageView imageViewKiller;
 
+
     /**
      Starts displaying a new chess game on the screen.
      @param stage the stage where program is displaying.

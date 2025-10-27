@@ -14,6 +14,7 @@ public class King extends ChessPiece {
      @param position a given position
      @param color a given chess color
      */
+
     public King(ChessField chessField, String position, String color, String picture) {
         super(chessField, position, color, picture);
     }
