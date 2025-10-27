@@ -243,6 +243,7 @@ public class Game extends Application {
                         }
                     }
                 }
+
                 else {
                     count.set(0);
                     chessKiller = chessPiece;
